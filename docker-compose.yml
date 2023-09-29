@@ -1,0 +1,14 @@
+version: '3.5'
+
+services:
+
+  app:   
+    build:
+      context: .
+      dockerfile: Dockerfile
+      platforms: 
+        - "linux/amd64" # Pour la compatibilité avec les autres os
+    env_file:
+      - .env
+    ports:
+      - "8081:8081"
