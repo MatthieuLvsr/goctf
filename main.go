@@ -1,7 +1,10 @@
 package main
 
-import "fmt"
+import (
+
+	"github.com/MatthieuLvsr/goctf/request"
+)
 
 func main() {
-	fmt.Println("Hello, World!")
+	request.Request()
 }
